@@ -1,0 +1,172 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: darkblue;
+}
+.navbar{
+    position: sticky;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+.nav{
+    background-color: transparent;
+    width: 50%;
+    display: flex;
+}
+.nav a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 15px;
+    transition: 2s;
+}
+.nav a:hover{
+    color: transparent;
+    transform: rotate(1440deg);
+}
+.body{
+    background-color: #ff336b;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+.slide{
+    overflow: hidden;
+    background-color: #ff336b ;
+    height: auto;
+    transform: skewY(5deg);
+    transform-origin: top left;
+    z-index: -1;
+}
+.image{
+    height: 144px;
+    width: 144px;
+    border-radius: 150px;
+    justify-content: center;
+}
+.imagebg{
+    display: flex;
+    justify-content: center;
+}
+.row{
+    display: flex;
+}
+.card{
+    height: auto;
+    background-color: white;
+    width: 250px;
+    margin: 13px;
+    justify-content: center;
+    align-items: center;
+}
+.ptext:active{
+    color: transparent;
+    background-color: transparent;
+}
+.gall{
+    height: 200px;
+    width: 250px;
+    margin: 29px;
+    transition: 50s;
+}
+.hoverable:hover{
+    height: 100%;
+    background-color: darkblue;
+    color: white;
+}
+.reponse-img{
+    transition: 50s;
+    width: 100%;
+    height: 100%;
+}
+.card-title{
+    position: relative;
+}
+.text{
+    margin: 100px;
+}
+.bodys{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    width: auto;
+}
+.form input{
+    color: white;
+    background-color: transparent;
+    font-size: 7vh;
+    width: 70%;
+    height: 10vh;
+    border: 10px solid black;
+    border-bottom-color: red;
+}
+.form textarea{
+    color: white;
+    background-color: transparent;
+    font-size: 7vh;
+    width: 70%;
+    height: 30vh;
+    border: 10px solid black;
+    border-bottom-color: red;
+}
+.form button{
+    margin-top: 16px;
+    border-radius: 20px;
+    color: white;
+    background-color: transparent;
+    font-size: 7vh;
+    width: 70%;
+    height: 10vh;
+    transition: 1s;
+    border: 3px solid red;
+}
+.form button:hover{
+    color: yellow;
+    background-color: red;
+}
+@media screen and (max-width:1000px) {
+    .form input{
+        font-size: 5vh;
+    }
+    .form textarea{
+        font-size: 5vh;
+    }
+    .slide,.body{
+        height: auto;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .nav{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .nav a{
+        transition: 1.0s;
+        flex-direction: column;
+        font-size: 20px;
+        transform: none
+    }
+    .nav a:hover{
+        transform: rotate(360deg);
+    }
+    .navbar{
+        height: auto;
+    }
+}
